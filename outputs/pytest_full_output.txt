@@ -1,0 +1,42 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\eurgarci\OneDrive - Cisco\Desktop\project_7\P7-SoftDev-USApp\env\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\eurgarci\OneDrive - Cisco\Desktop\project_7\P7-SoftDev-USApp
+collecting ... collected 34 items
+
+tests/test_app.py::test_homepage PASSED                                  [  2%]
+tests/test_app.py::test_login PASSED                                     [  5%]
+tests/test_booking_limits.py::TestBookingLimit12Spots::test_booking_12_spots_succeeds PASSED [  8%]
+tests/test_booking_limits.py::TestBookingLimit12Spots::test_booking_12_spots_deducts_points PASSED [ 11%]
+tests/test_booking_limits.py::TestBookingLimit12Spots::test_booking_13_spots_rejected PASSED [ 14%]
+tests/test_booking_limits.py::TestBookingLimit12Spots::test_booking_13_spots_shows_error PASSED [ 17%]
+tests/test_booking_limits.py::TestBookingLimit12Spots::test_booking_13_spots_no_point_change PASSED [ 20%]
+tests/test_booking_limits.py::TestBookingLimit12Spots::test_booking_13_spots_no_spots_change PASSED [ 23%]
+tests/test_booking_past.py::TestPastCompetitionBooking::test_past_competition_booking_rejected PASSED [ 26%]
+tests/test_booking_past.py::TestPastCompetitionBooking::test_past_competition_shows_error PASSED [ 29%]
+tests/test_booking_past.py::TestPastCompetitionBooking::test_past_competition_no_point_change PASSED [ 32%]
+tests/test_booking_past.py::TestPastCompetitionBooking::test_past_competition_no_spots_change PASSED [ 35%]
+tests/test_booking_past.py::TestFutureCompetitionBooking::test_future_competition_booking_allowed PASSED [ 38%]
+tests/test_booking_past.py::TestFutureCompetitionBooking::test_future_competition_deducts_points PASSED [ 41%]
+tests/test_booking_past.py::TestFutureCompetitionBooking::test_future_competition_reduces_spots PASSED [ 44%]
+tests/test_booking_points.py::TestSuccessfulBooking::test_successful_booking_returns_200 PASSED [ 47%]
+tests/test_booking_points.py::TestSuccessfulBooking::test_successful_booking_shows_confirmation PASSED [ 50%]
+tests/test_booking_points.py::TestSuccessfulBooking::test_successful_booking_deducts_points PASSED [ 52%]
+tests/test_booking_points.py::TestSuccessfulBooking::test_successful_booking_reduces_spots PASSED [ 55%]
+tests/test_booking_points.py::TestInsufficientPoints::test_insufficient_points_rejected PASSED [ 58%]
+tests/test_booking_points.py::TestInsufficientPoints::test_insufficient_points_shows_error PASSED [ 61%]
+tests/test_booking_points.py::TestInsufficientPoints::test_insufficient_points_no_point_change PASSED [ 64%]
+tests/test_booking_points.py::TestInsufficientPoints::test_insufficient_points_no_spots_change PASSED [ 67%]
+tests/test_login.py::TestLoginValidEmail::test_valid_email_returns_200 PASSED [ 70%]
+tests/test_login.py::TestLoginValidEmail::test_valid_email_shows_welcome_content PASSED [ 73%]
+tests/test_login.py::TestLoginValidEmail::test_valid_email_shows_points PASSED [ 76%]
+tests/test_login.py::TestLoginInvalidEmail::test_invalid_email_returns_401 PASSED [ 79%]
+tests/test_login.py::TestLoginInvalidEmail::test_invalid_email_does_not_crash PASSED [ 82%]
+tests/test_login.py::TestLoginInvalidEmail::test_invalid_email_shows_error_message PASSED [ 85%]
+tests/test_login.py::TestLoginInvalidEmail::test_empty_email_returns_401 PASSED [ 88%]
+tests/test_points_board.py::TestPointsBoard::test_points_board_public_access PASSED [ 91%]
+tests/test_points_board.py::TestPointsBoard::test_points_board_shows_clubs_and_points PASSED [ 94%]
+tests/test_points_board.py::TestPointsBoard::test_points_board_no_login_required PASSED [ 97%]
+tests/test_points_board.py::TestPointsBoard::test_points_board_sorted_by_points_descending PASSED [100%]
+
+============================= 34 passed in 0.26s ==============================
